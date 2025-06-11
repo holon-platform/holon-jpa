@@ -1,10 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
 		<groupId>com.holon-platform</groupId>
 		<artifactId>parent</artifactId>
-		<version>1.2.0</version>
+		<version>2.0.0</version>
 	</parent>
 
 	<groupId>com.holon-platform.jpa</groupId>
@@ -47,7 +49,8 @@
 	<scm>
 		<connection>scm:git:https://github.com/holon-platform/holon-jpa.git</connection>
 		<url>https://github.com/holon-platform/holon-jpa</url>
-		<developerConnection>scm:git:https://github.com/holon-platform/holon-jpa.git</developerConnection>
+		<developerConnection>
+			scm:git:https://github.com/holon-platform/holon-jpa.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -55,10 +58,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- Holon core -->
-		<holon.core.version>5.7.0</holon.core.version>
+		<holon.core.version>6.0.0</holon.core.version>
 
 		<!--JPA API -->
-		<jpa.api.version>2.2</jpa.api.version>
+		<jpa.api.version>3.1.0</jpa.api.version>
 
 	</properties>
 
@@ -100,6 +103,7 @@
 							<show>public</show>
 							<excludePackageNames>*.internal.*;*.examples.*</excludePackageNames>
 							<quiet>true</quiet>
+							<sourcepath>src/main/java</sourcepath>
 						</configuration>
 					</execution>
 				</executions>
